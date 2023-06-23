@@ -112,7 +112,7 @@
 
                                             <div class="col-2">
                                                 <button
-                                                    class="btn btn-dark"
+                                                    class="btn btn-success"
                                                     style="margin-top: 37px"
                                                 >
                                                     Cetak

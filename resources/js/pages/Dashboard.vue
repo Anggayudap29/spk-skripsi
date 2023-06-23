@@ -37,7 +37,7 @@
                     <div class="col-lg-4 col-6">
                         <!-- small box -->
 
-                        <div class="small-box bg-info">
+                        <div class="small-box bg-success">
                             <div class="inner">
                                 <h3>{{ dashboard.guru }}</h3>
 
@@ -63,7 +63,7 @@
                     <div class="col-lg-4 col-6">
                         <!-- small box -->
 
-                        <div class="small-box bg-info">
+                        <div class="small-box bg-success">
                             <div class="inner">
                                 <h3>{{ dashboard.kriteria }}</h3>
 
@@ -89,7 +89,7 @@
                     <div class="col-lg-4 col-6">
                         <!-- small box -->
 
-                        <div class="small-box bg-info">
+                        <div class="small-box bg-success">
                             <div class="inner">
                                 <h3>{{ dashboard.hasil }}</h3>
 
@@ -118,9 +118,9 @@
                     style="max-height: 400px; overflow-y: auto"
                 >
                     <div class="col-lg-12 mx-auto">
-                        <h5>
+                        <!-- <h5>
                             <b>Sistem Penunjang Keputusan</b>
-                        </h5>
+                        </h5> -->
 
                         <!-- Timeline -->
 

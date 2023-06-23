@@ -46,7 +46,7 @@
                                             <i class="fas fa-info"></i>
                                             Info:
                                         </h5>
-                                        Perangkingan Alternatif Belum Tersedia
+                                        Perangkingan Guru Belum Tersedia
                                     </div>
 
                                     <div v-else>
@@ -89,7 +89,7 @@
                                                 <div class="col-sm-2">
                                                     <button
                                                         type="submit"
-                                                        class="btn btn-dark"
+                                                        class="btn btn-success"
                                                     >
                                                         Preview
                                                     </button>

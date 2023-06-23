@@ -59,7 +59,7 @@
                                     </a> -->
 
                                     <router-link
-                                        class="btn btn-dark px-5 float-right mb-3"
+                                        class="btn btn-success px-5 float-right mb-3"
                                         :to="{ name: 'tambah-alternatif' }"
                                     >
                                         Tambah Data
@@ -71,7 +71,7 @@
                                         <i class="fas fa-info"></i>
                                         Info:
                                     </h5>
-                                    Data Alternatif (Guru) tidak tersedia
+                                    Data Guru tidak tersedia
                                 </div>
 
                                 <div class="table-responsive" v-else>

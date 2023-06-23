@@ -15,7 +15,7 @@
         </ul>
 
         <!-- Right navbar links -->
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ml-auto ">
             <li>
                 <div class="dropdown">
                     <a

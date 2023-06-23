@@ -207,7 +207,8 @@ class AuthController extends Controller
         $guru = DB::table("guru")->get();
 
         $path = storage_path() . "/app/artikel.json";
-        $artikel = json_decode(file_get_contents($path), true);
+        // $artikel = json_decode(file_get_contents($path), true);
+       $artikel = null;
 
         $data = [
             "guru" => count($guru),

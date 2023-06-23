@@ -393,17 +393,19 @@ class PenilaianController extends Controller
 
         $pdf = new Fpdf();
         $pdf->AddPage("P", "A4");
-        $pdf->Image("images/lambang_Kota_Tangerang.png", 11, 5, 31, 31);
+        $pdf->Image("images/logo_yia.png", 11, 5, 31, 31);
         $pdf->Cell(25);
-        $pdf->SetTextColor(61, 68, 99);
+        $pdf->SetTextColor(11, 102, 35);
+        $pdf->SetFont("Times", "B", "15");
+        $pdf->Cell(0, 8, "YAYASAN ISLAM AL-AYANIAH [YIA]", 0, 1, "C");
+        $pdf->Cell(25);
+        $pdf->SetFont("Times", "B", "17");
+        $pdf->SetTextColor(255, 199, 00);
+        $pdf->Cell(0, 6, "SEKOLAH MENENGAH ATAS ISLAM AL-AYANIAH", 0, 1, "C");
+        $pdf->Cell(25);
+        $pdf->SetTextColor(00, 000, 00);
         $pdf->SetFont("Times", "B", "14");
-        $pdf->Cell(0, 5, "PEMERINTAH KOTA TANGERANG", 0, 1, "C");
-        $pdf->Cell(25);
-        $pdf->Cell(0, 5, "DINAS PENDIDIKAN", 0, 1, "C");
-        $pdf->Cell(25);
-        $pdf->Cell(0, 5, "UPT SATUAN PENDIDIKAN", 0, 1, "C");
-        $pdf->Cell(25);
-        $pdf->Cell(0, 5, "SD NEGERI JURUMUDI 1", 0, 1, "C");
+        $pdf->Cell(0, 7, "Izin Kanwil DEPDIKBUD JABAR NO : 394/1-02/KEP/E-89", 0, 1, "C");
         $pdf->Cell(25);
         $pdf->SetFont("Times", "B", 9);
         // Removes bold
@@ -411,30 +413,19 @@ class PenilaianController extends Controller
         $pdf->Cell(
             0,
             3,
-            "Alamat : Jl.Halim Perdana Kusuma, Kel. Jurumudi, Kec. Benda, Konta Tangerang Banten Kode Pos 15124",
+            "Jl. Halim Perdana Kusuma No. 56-60 Kebon Besar Batu Ceper Tangerang 15122 Telp. 021 2225 2531",
             0,
             1,
             "C"
         );
         $pdf->Cell(25);
-        $pdf->Cell(0, 3, "Email : sdnjurumudisatu@yahoo.com", 0, 1, "C");
-
-        $pdf->SetFont("Times", "B", "12");
-        $pdf->Cell(
-            0,
-            5,
-            "NSS : 101280504004                                                    TANGERANG",
-            0,
-            0,
-            "L"
-        );
-        $pdf->Cell(0, 5, "NPSN : 20606975", 0, 0, "R");
+       
 
         $pdf->SetLineWidth(1);
 
-        $pdf->Line(10, 41, 198, 41);
+        $pdf->Line(10, 38, 198, 38);
         $pdf->SetLineWidth(0);
-        $pdf->Line(10, 42, 198, 42);
+        $pdf->Line(10, 39, 198, 39);
         $pdf->Ln(14);
         $pdf->SetTextColor(0, 0, 0);
         $pdf->SetFont("Times", "BU", "14");
@@ -483,9 +474,7 @@ class PenilaianController extends Controller
         $pdf->Cell(310, 5, "Kepala Sekolah", 0, 1, "C");
 
         $pdf->SetFont("Times", "BU", "12");
-        $pdf->Cell(329, 60, "Drs.H.MAHPUJI               ", 0, 1, "C");
-        $pdf->SetFont("Times", "", "12");
-        $pdf->Cell(327, -50, "NIP:196306211984101010", 0, 1, "C");
+        $pdf->Cell(319, 60, "ATO UL AZIS, SE", 0, 1, "C");
 
         $pdf->Output();
         exit();
@@ -636,9 +625,7 @@ class PenilaianController extends Controller
         $pdf->Cell(310, 5, "Kepala Sekolah", 0, 1, "C");
 
         $pdf->SetFont("Times", "BU", "12");
-        $pdf->Cell(329, 60, "Drs.H.MAHPUJI               ", 0, 1, "C");
-        $pdf->SetFont("Times", "", "12");
-        $pdf->Cell(327, -50, "NIP:196306211984101010", 0, 1, "C");
+        $pdf->Cell(319, 60, "ATO UL AZIS, SE", 0, 1, "C");
 
         $pdf->Output();
         exit();

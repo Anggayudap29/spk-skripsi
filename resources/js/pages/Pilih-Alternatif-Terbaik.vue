@@ -8,7 +8,7 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                        <h1>Pilih Alternatif (Guru) Terbaik</h1>
+                        <h1>Pilih  Guru Terbaik</h1>
                     </div>
 
                     <div class="col-sm-6">
@@ -122,7 +122,7 @@
                                         id="datatable"
                                         class="table table-bordered table-striped text-center"
                                     >
-                                        <thead class="bg-dark">
+                                        <thead class="bg-success">
                                             <tr>
                                                 <th class="align-middle">#</th>
 
@@ -219,7 +219,7 @@
                                                             ha.kode_hasil +
                                                             '/buat-keputusan'
                                                         "
-                                                        class="btn btn-dark btn-sm"
+                                                        class="btn btn-success btn-sm"
                                                     >
                                                         <!-- <i
                                                             class="fas fa-check fa-solid"
