@@ -14,7 +14,7 @@
  <h3 class="font-weight-bold"> SPK-APP </h3>
   </div>
     <div class="text-center font-weight-bold" style="margin-top: -10px;">
-<h3 class="font-weight-bold">SDN JURUMUDI 1 </h3>
+<h3 class="font-weight-bold">SMA ISLAM AL-AYANIYAH</h3>
   </div>
   <!-- /.login-logo -->
   <div class="card">

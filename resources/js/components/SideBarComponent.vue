@@ -5,14 +5,14 @@
         <!-- Brand Logo -->
 
         <router-link to="/dashboard" class="brand-link">
-            <img src="/images/tut_wuri_handayani.png" class="brand-image" />
+            <img src="/images/logo_yia.png" class="brand-image" />
 
-            <span class="brand-text font-weight-bold">SDN JURUMUDI 1</span>
+            <span class="brand-text font-weight-bold">SMA  AL-AYANIYAH</span>
         </router-link>
 
         <!-- Sidebar -->
 
-        <div class="sidebar">
+        <div class="sidebar ">
             <nav class="mt-2">
                 <ul
                     class="nav nav-pills nav-sidebar flex-column"
@@ -53,19 +53,19 @@
                                 <router-link to="/alternatif" class="nav-link">
                                     <i class="fas fa-circle nav-icon"></i>
 
-                                    <p>Alternatif</p>
+                                    <p>Guru</p>
                                 </router-link>
                             </li>
                         </ul>
                     </li>
 
-                    <li class="nav-item" style="cursor: pointer">
+                    <!-- <li class="nav-item" style="cursor: pointer">
                         <a class="nav-link" @click.prevent="cekAhp()">
                             <i class="nav-icon fas fa-balance-scale-left"></i>
 
                             <p>Pembobotan Kriteria</p>
                         </a>
-                    </li>
+                    </li>-->
 
                     <li class="nav-item">
                         <router-link to="/penilaian" class="nav-link">
@@ -75,7 +75,7 @@
                                 ><b style="font-size: 12px">(SAW)</b></i
                             > -->
 
-                            <p>Penilaian Alternatif</p>
+                            <p>Penilaian Guru</p>
                         </router-link>
                     </li>
 
@@ -97,7 +97,7 @@
                                 >
                                     <i class="fas fa-circle nav-icon"></i>
 
-                                    <p>Penilaian Alternatif</p>
+                                    <p>Penilaian Guru</p>
                                 </router-link>
                             </li>
                         </ul>
@@ -110,7 +110,7 @@
                                 >
                                     <i class="fas fa-circle nav-icon"></i>
 
-                                    <p>Perangkingan Alternatif</p>
+                                    <p>Perangkingan Guru</p>
                                 </router-link>
                             </li>
                         </ul>

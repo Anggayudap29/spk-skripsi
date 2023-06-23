@@ -41,7 +41,7 @@
                             <div class="inner">
                                 <h3>{{ dashboard.guru }}</h3>
 
-                                <p>Alternatif (Guru)</p>
+                                <p>Guru</p>
                             </div>
 
                             <div class="icon">
@@ -93,7 +93,7 @@
                             <div class="inner">
                                 <h3>{{ dashboard.hasil }}</h3>
 
-                                <p>Penilaian Alternatif</p>
+                                <p>Penilaian Guru</p>
                             </div>
 
                             <div class="icon">

@@ -8,7 +8,7 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                        <h1>Laporan Penilaian Alternatif (Guru)</h1>
+                        <h1>Laporan Penilaian  Guru</h1>
                     </div>
 
                     <div class="col-sm-6">
@@ -22,7 +22,7 @@
                             </li>
 
                             <li class="breadcrumb-item active">
-                                Laporan Penilaian Alternatif
+                                Laporan Penilaian Guru
                             </li>
                         </ol>
                     </div>
@@ -126,7 +126,7 @@
                 <div class="card">
                     <div class="card-header">
                         <b
-                            >Hasil Penilaian Alternatif Periode
+                            >Hasil Penilaian Guru Periode
                             {{ form.periode }}</b
                         >
 
