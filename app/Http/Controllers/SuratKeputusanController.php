@@ -146,7 +146,7 @@ class SuratKeputusanController extends Controller
             5,
             "dengan nama di atas dinobatkan sebagai guru terbaik pada periode " .
                 $sk->periode .
-                " dan berhak mewakilkan sekolah dalam",
+                " dan berhak mendapatkan penghargaan",
             0,
             1,
             "L"
@@ -154,7 +154,7 @@ class SuratKeputusanController extends Controller
         $pdf->Cell(
             70,
             5,
-            "mengikuti agenda pemilihan guru tingkat Kecamatan/korwil.",
+            "berupa uang sebesar Rp 1.500.000.",
             0,
             1,
             "L"
