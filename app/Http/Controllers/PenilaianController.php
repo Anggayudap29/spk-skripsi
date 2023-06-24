@@ -509,7 +509,6 @@ class PenilaianController extends Controller
     {
         $penilaian_model = new Penilaian();
         $hasil_model = new Hasil();
-
         $alternatif = $penilaian_model->getAlternatifByPeriode($periode);
         $kriteria = $penilaian_model->getKriteriaByPeriode($periode);
         $nilai_awal = $hasil_model->getNilaiAwalByPeriode($periode);
