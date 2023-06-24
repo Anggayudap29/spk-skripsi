@@ -8,7 +8,7 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                        <h1>Pilih  Guru Terbaik</h1>
+                        <h1>Pilih Guru Terbaik</h1>
                     </div>
 
                     <div class="col-sm-6">
@@ -78,14 +78,6 @@
                                         </table>
 
                                         <table class="table-sm">
-                                            <tr>
-                                                <th>NIP</th>
-
-                                                <td>:</td>
-
-                                                <td>{{ sk.nip }}</td>
-                                            </tr>
-
                                             <tr>
                                                 <th>Nama</th>
 

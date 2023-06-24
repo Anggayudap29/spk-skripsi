@@ -39,7 +39,7 @@ class Surat_Keputusan extends Model
             )
             ->join("penilaian", "hasil.kode_hasil", "=", "penilaian.kode_hasil")
             ->join("guru", "penilaian.kode_guru", "=", "guru.kode_guru")
-            ->select("hasil.*", "surat_keputusan.*", "guru.nama", "guru.nip")
+            ->select("hasil.*", "surat_keputusan.*", "guru.nama")
             ->groupBy("guru.kode_guru")
             ->where("hasil.periode", $periode)
             ->get();
@@ -63,7 +63,6 @@ class Surat_Keputusan extends Model
                 "hasil.nilai_saw",
                 "surat_keputusan.*",
                 "guru.nama",
-                "guru.nip"
             )
             ->groupBy("hasil.kode_hasil")
             ->where("hasil.kode_hasil", $kode_hasil)

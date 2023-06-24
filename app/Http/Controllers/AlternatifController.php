@@ -43,25 +43,23 @@ class AlternatifController extends Controller
         $validation = Validator::make($request->all(), [
             "nama" => "required",
             "tempat_lahir" => "required",
-            "nip" => "required",
             "jenis_kelamin" => "required",
             "tanggal_lahir" => "required",
         ]);
 
-        if ($validation->fails()):
+        if ($validation->fails()) :
             $data = [
                 "status" => false,
                 "message" => $validation->errors(),
             ];
             return response()->json($data, 422);
-        else:
+        else :
             $alternatif = new Alternatif();
             $kode_alternatif = $alternatif->getAutoKodeAlternatif();
 
             $alternatif->kode_guru = $kode_alternatif;
             $alternatif->nama = $request->nama;
             $alternatif->jenis_kelamin = $request->jenis_kelamin;
-            $alternatif->nip = $request->nip;
             $alternatif->tanggal_lahir = $request->tanggal_lahir;
             $alternatif->tempat_lahir = $request->tempat_lahir;
             $alternatif->save();
@@ -88,16 +86,17 @@ class AlternatifController extends Controller
 
         $data = [
             "kode_guru" => $alternatif->kode_guru,
-            "nip" => $alternatif->nip,
+
             "nama" => $alternatif->nama,
             "jenis_kelamin" => $alternatif->jenis_kelamin,
             "tempat_lahir" => $alternatif->tempat_lahir,
-            "tanggal_lahir" =>
-                date("d", strtotime($alternatif->tanggal_lahir)) .
-                "-" .
-                getBulan(date("m", strtotime($alternatif->tanggal_lahir))) .
-                "-" .
-                date("Y", strtotime($alternatif->tanggal_lahir)),
+            "tanggal_lahir" => $alternatif->tanggal_lahir
+            // "tanggal_lahir" =>
+            // date("d", strtotime($alternatif->tanggal_lahir)) .
+            //     "-" .
+            //     getBulan(date("m", strtotime($alternatif->tanggal_lahir))) .
+            //     "-" .
+            //     date("Y", strtotime($alternatif->tanggal_lahir)),
         ];
         return response()->json($data);
     }
@@ -118,23 +117,21 @@ class AlternatifController extends Controller
         $validation = Validator::make($request->all(), [
             "nama" => "required",
             "tempat_lahir" => "required",
-            "nip" => "required",
             "jenis_kelamin" => "required",
             "tanggal_lahir" => "required",
         ]);
 
-        if ($validation->fails()):
+        if ($validation->fails()) :
             $data = [
                 "status" => false,
                 "message" => $validation->errors(),
             ];
             return response()->json($data, 422);
-        else:
+        else :
             Alternatif::where("kode_guru", $kode)->update([
                 "nama" => $request->nama,
                 "tempat_lahir" => $request->tempat_lahir,
                 "jenis_kelamin" => $request->jenis_kelamin,
-                "nip" => $request->nip,
                 "tanggal_lahir" => $request->tanggal_lahir,
             ]);
 
@@ -155,7 +152,7 @@ class AlternatifController extends Controller
             $data = [
                 "status" => true,
                 "message" =>
-                    "Data Guru Gagal dihapus, Karena Sudah Terdaftar Dalam Penilaian",
+                "Data Guru Gagal dihapus, Karena Sudah Terdaftar Dalam Penilaian",
             ];
 
             return response()->json($data, 422);

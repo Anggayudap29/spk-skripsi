@@ -49,37 +49,6 @@
                         >
                             <div class="form-group row">
                                 <label
-                                    for="inputnip"
-                                    class="col-sm-2 col-form-label"
-                                >
-                                    NIP
-                                </label>
-
-                                <div class="col-sm-10">
-                                    <input
-                                        type="text"
-                                        class="form-control"
-                                        v-bind:class="{
-                                            'is-invalid': errors.nip,
-                                        }"
-                                        v-model="form.nip"
-                                        id="inputnip"
-                                        placeholder="NIP"
-                                    />
-
-                                    <div
-                                        v-if="errors.nip"
-                                        v-bind:class="{
-                                            'invalid-feedback': errors.nip,
-                                        }"
-                                    >
-                                        {{ errors.nip[0] }}
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label
                                     for="inputNama"
                                     class="col-sm-2 col-form-label"
                                 >
@@ -254,7 +223,6 @@ export default {
             disabled: false,
             form: {
                 nama: "",
-                nip: "",
                 jenis_kelamin: "",
                 tempat_lahir: "",
                 tanggal_lahir: "",

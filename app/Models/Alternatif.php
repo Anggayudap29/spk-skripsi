@@ -19,7 +19,6 @@ class Alternatif extends Model
         "nama",
         "tempat_lahir",
         "tanggal_lahir",
-        "nip",
         "jenis_kelamin",
     ];
 
