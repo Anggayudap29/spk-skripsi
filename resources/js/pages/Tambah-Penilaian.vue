@@ -8,7 +8,7 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                        <h1>Penilaian Alternatif (Guru)</h1>
+                        <h1>Penilaian Guru</h1>
                     </div>
 
                     <div class="col-sm-6">
@@ -130,7 +130,7 @@
 
                                 <button
                                     type="submit"
-                                    class="btn btn-dark mt-3 float-right"
+                                    class="btn btn-success mt-3 float-right"
                                     :disabled="disabled"
                                 >
                                     <i
