@@ -25,7 +25,7 @@ class SuratKeputusanController extends Controller
                     "nilai_saw" => $s->nilai_saw,
                     "keterangan" => $s->keterangan,
                     "tanggal" =>
-                        date("d", strtotime($s->tanggal)) .
+                    date("d", strtotime($s->tanggal)) .
                         "-" .
                         getBulan(date("m", strtotime($s->tanggal))) .
                         "-" .
@@ -82,7 +82,7 @@ class SuratKeputusanController extends Controller
             "C"
         );
         $pdf->Cell(25);
-       
+
 
         $pdf->SetLineWidth(1);
 
@@ -118,10 +118,7 @@ class SuratKeputusanController extends Controller
         //  $pdf->SetFont('Times','','12');
         // $pdf->Cell(50,5,' : '.$sk->kode_saw,0,1,'L');
 
-        $pdf->SetFont("Times", "B", "12");
-        $pdf->Cell(30, 5, "NIP ", 0, 0, "L");
-        $pdf->SetFont("Times", "", "12");
-        $pdf->Cell(50, 5, " : " . $sk->nip, 0, 1, "L");
+
 
         $pdf->SetFont("Times", "B", "12");
         $pdf->Cell(30, 5, "Nama Guru ", 0, 0, "L");
@@ -154,7 +151,7 @@ class SuratKeputusanController extends Controller
         $pdf->Cell(
             70,
             5,
-            "berupa uang sebesar Rp 1.5000.",
+            "berupa uang sebesar Rp 1.500.000,00.",
             0,
             1,
             "L"
@@ -262,7 +259,7 @@ class SuratKeputusanController extends Controller
             "C"
         );
         $pdf->Cell(25);
-       
+
 
         $pdf->SetLineWidth(1);
 
@@ -328,7 +325,7 @@ class SuratKeputusanController extends Controller
 
         $pdf->SetFont("Times", "BU", "12");
         $pdf->Cell(319, 60, "ATO UL AZIS, SE", 0, 1, "C");
-        
+
 
         $pdf->Output();
         exit();
