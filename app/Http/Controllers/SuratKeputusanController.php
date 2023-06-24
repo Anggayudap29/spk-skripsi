@@ -60,11 +60,11 @@ class SuratKeputusanController extends Controller
         $pdf->Cell(25);
         $pdf->SetTextColor(11, 102, 35);
         $pdf->SetFont("Times", "B", "15");
-        $pdf->Cell(0, 8, "YAYASAN ISLAM AL-AYANIAH [YIA]", 0, 1, "C");
+        $pdf->Cell(0, 8, "YAYASAN ISLAM AL-AYANIYAH [YIA]", 0, 1, "C");
         $pdf->Cell(25);
         $pdf->SetFont("Times", "B", "17");
         $pdf->SetTextColor(255, 199, 00);
-        $pdf->Cell(0, 6, "SEKOLAH MENENGAH ATAS ISLAM AL-AYANIAH", 0, 1, "C");
+        $pdf->Cell(0, 6, "SEKOLAH MENENGAH ATAS ISLAM AL-AYANIYAH", 0, 1, "C");
         $pdf->Cell(25);
         $pdf->SetTextColor(00, 000, 00);
         $pdf->SetFont("Times", "B", "14");
@@ -154,7 +154,7 @@ class SuratKeputusanController extends Controller
         $pdf->Cell(
             70,
             5,
-            "berupa uang sebesar Rp 1.500.000.",
+            "berupa uang sebesar Rp 1.5000.",
             0,
             1,
             "L"
@@ -240,11 +240,11 @@ class SuratKeputusanController extends Controller
         $pdf->Cell(25);
         $pdf->SetTextColor(11, 102, 35);
         $pdf->SetFont("Times", "B", "15");
-        $pdf->Cell(0, 8, "YAYASAN ISLAM AL-AYANIAH [YIA]", 0, 1, "C");
+        $pdf->Cell(0, 8, "YAYASAN ISLAM AL-AYANIYAH [YIA]", 0, 1, "C");
         $pdf->Cell(25);
         $pdf->SetFont("Times", "B", "17");
         $pdf->SetTextColor(255, 199, 00);
-        $pdf->Cell(0, 6, "SEKOLAH MENENGAH ATAS ISLAM AL-AYANIAH", 0, 1, "C");
+        $pdf->Cell(0, 6, "SEKOLAH MENENGAH ATAS ISLAM AL-AYANIYAH", 0, 1, "C");
         $pdf->Cell(25);
         $pdf->SetTextColor(00, 000, 00);
         $pdf->SetFont("Times", "B", "14");
