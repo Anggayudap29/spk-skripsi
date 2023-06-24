@@ -55,8 +55,8 @@ class PenilaianController extends Controller
             $errors = [
                 "tahun_penilaian" => [
                     "penilaian di periode " .
-                    $request->tahun_penilaian .
-                    " sudah pernah dilakukan",
+                        $request->tahun_penilaian .
+                        " sudah pernah dilakukan",
                 ],
             ];
             $data = [
@@ -419,7 +419,7 @@ class PenilaianController extends Controller
             "C"
         );
         $pdf->Cell(25);
-       
+
 
         $pdf->SetLineWidth(1);
 
@@ -565,11 +565,8 @@ class PenilaianController extends Controller
         $pdf->Cell(10, 9, "NO", 1, 0, "C");
         $pdf->Cell(30, 9, "Nama", 1, 0, "C");
         foreach ($kriteria as $k) {
-            if ($k->kode_kriteria == "KRT005") {
-                $pdf->Cell(29, 9, $k->nama, 1, 0, "C");
-            } else {
-                $pdf->Cell(20, 9, $k->nama, 1, 0, "C");
-            }
+
+            $pdf->Cell(27, 9, $k->nama, 1, 0, "C");
         }
         $pdf->Cell(20, 9, "Nilai", 1, 1, "C");
 
@@ -580,11 +577,8 @@ class PenilaianController extends Controller
             $pdf->Cell(30, 9, $a->nama, 1, 0, "C");
             foreach ($nilai_awal as $n) {
                 if ($n->kode_guru == $a->kode_guru) {
-                    if ($n->kode_kriteria == "KRT005") {
-                        $pdf->Cell(29, 9, $n->nilai, 1, 0, "C");
-                    } else {
-                        $pdf->Cell(20, 9, $n->nilai, 1, 0, "C");
-                    }
+
+                    $pdf->Cell(27, 9, $n->nilai, 1, 0, "C");
                 }
             }
             foreach ($hasil_akhir as $h) {
